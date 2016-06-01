@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="my-project:war exploded">
+    <output-path>$PROJECT_DIR$/target/my-project-1.0</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="my-project" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.liquibase:liquibase-core:3.5.1" />
+          <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.13" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/my-project-1.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="my-project/web/Web" />
+    </root>
+  </artifact>
+</component>

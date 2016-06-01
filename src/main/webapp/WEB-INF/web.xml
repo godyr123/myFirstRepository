@@ -1,0 +1,39 @@
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+    <display-name>REST API</display-name>
+    <!-- MAIN SERVLET -->
+    <servlet>
+        <servlet-name>mainServlet</servlet-name>
+        <servlet-class>org.taratser.model.servlet.MainServlet</servlet-class>
+        <init-param>
+            <param-name>country</param-name>
+            <param-value>LV</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mainServlet</servlet-name>
+        <url-pattern></url-pattern>
+    </servlet-mapping>
+
+    <!-- PERSON SERVLET -->
+    <servlet>
+        <servlet-name>personServlet</servlet-name>
+        <servlet-class>org.taratser.model.servlet.PersonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>personServlet</servlet-name>
+        <url-pattern>/person/create</url-pattern>
+    </servlet-mapping>
+
+    <!-- LOAN SERVLET -->
+    <servlet>
+        <servlet-name>loanServlet</servlet-name>
+        <servlet-class>org.taratser.model.servlet.LoanServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loanServlet</servlet-name>
+        <url-pattern>/loan/new</url-pattern>
+    </servlet-mapping>
+</web-app>
